@@ -72,4 +72,4 @@ class Poll {
 
 const p = new Poll(document.querySelector(".poll"), "which do you prefer ?");
 
-console.log(p);
+// console.log(p);
