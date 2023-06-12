@@ -2,7 +2,7 @@ class Poll {
   constructor(root, title) {
     this.root = root;
     this.selected = sessionStorage.getItem("poll-selected");
-    this.endpoint = "http://localhost:5000/poll";
+    this.endpoint = "/api";
 
     this.root.insertAdjacentHTML(
       "afterbegin",
