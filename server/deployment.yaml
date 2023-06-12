@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vote-app-deployment
+  name: vote-app
   labels:
     app: vote-app
 spec:
@@ -15,7 +15,7 @@ spec:
         app: vote-app
     spec:
       containers:
-      - name: vote-app-container
+      - name: vote-app
         image: gcr.io/voting-container-demo/vote-app-gke
         ports:
         - containerPort: 5000
