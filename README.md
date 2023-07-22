@@ -30,7 +30,7 @@ Install Nginx reverse proxy to make this application available.
 `sudo apt install nginx`
 
 Update the server in nginx.conf file present in /etc/nginx/ directory [Cent OS or Amazon Linux]
-`
+```
 server {
         listen       80;
         listen       [::]:80;
@@ -44,4 +44,4 @@ server {
                 proxy_pass http://localhost:5000/poll;
         }
     }
-`
+```
